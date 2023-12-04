@@ -2,3 +2,9 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Recipes'
 theme = 'recipeCart'
+
+[taxonomies]
+  tag = 'tags'
+  meal = 'meals'
+  ingredient = 'ingredients'
+  world = 'world'
