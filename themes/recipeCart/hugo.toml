@@ -23,6 +23,11 @@ id = 'nav-ingredients'
 pageRef = '/ingredients'
 
 [[nav.main]]
+name = 'World'
+id = 'nav-world'
+pageRef = '/world'
+
+[[nav.main]]
 name = 'Cart'
 id = 'nav-cart'
 
