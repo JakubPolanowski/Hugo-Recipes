@@ -2,6 +2,37 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Recipe Cart'
 
+[[nav.main]]
+name = 'Home'
+id = 'nav-home'
+pageRef = '/'
+
+[[nav.main]]
+name = 'Recipes'
+id = 'nav-recipes'
+pageRef = '/recipes'
+
+[[nav.main]]
+name = 'Meals'
+id = 'nav-meals'
+pageRef = '/meals'
+
+[[nav.main]]
+name = 'Ingredients'
+id = 'nav-ingredients'
+pageRef = '/ingredients'
+
+[[nav.main]]
+name = 'Cart'
+id = 'nav-cart'
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"
+
+# unused setings from template
+
 [[menus.main]]
 name = 'Home'
 pageRef = '/'
@@ -17,7 +48,3 @@ name = 'Tags'
 pageRef = '/tags'
 weight = 30
 
-[module]
-  [module.hugoVersion]
-    extended = false
-    min = "0.116.0"
