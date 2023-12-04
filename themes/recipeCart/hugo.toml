@@ -2,34 +2,40 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Recipe Cart'
 
-[[nav.main]]
+[[menus.nav_main]]
 name = 'Home'
 id = 'nav-home'
 pageRef = '/'
+weight = 10
 
-[[nav.main]]
+[[menus.nav_main]]
 name = 'Recipes'
 id = 'nav-recipes'
 pageRef = '/recipes'
+weight = 20
 
-[[nav.main]]
+[[menus.nav_main]]
 name = 'Meals'
 id = 'nav-meals'
 pageRef = '/meals'
+weight = 30
 
-[[nav.main]]
+[[menus.nav_main]]
 name = 'Ingredients'
 id = 'nav-ingredients'
 pageRef = '/ingredients'
+weight = 40
 
-[[nav.main]]
+[[menus.nav_main]]
 name = 'World'
 id = 'nav-world'
 pageRef = '/world'
+weight = 50
 
-[[nav.main]]
+[[menus.nav_main]]
 name = 'Cart'
 id = 'nav-cart'
+weight = 60
 
 [module]
   [module.hugoVersion]
