@@ -1,4 +1,4 @@
-<nav class="navbar">
+<nav class="navbar is-light">
   <div class="container">
 
     <div class="navbar-brand">
@@ -16,20 +16,18 @@
 
     <div id="navbarMenu" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item is-active">
-          Home
-          </a>
-      <a class="navbar-item">
-              Examples
-          </a>
-      <a class="navbar-item">
-              Features
-          </a>
+        <!-- TODO add special handling for cart -->
+        {{- $page := .}}
+        {{- with index site.Menus "nav_main"}}
+          {{- range .}}
+            {{- $attrs := dict "href" .URL}}
+            <a {{ printf "href=%q" .URL | safeHTMLAttr }} class="navbar-item">
+              {{ .Name }}
+            </a>
+          {{- end}}
+        {{- end}}
       </div>
     </div>
 
   </div>
-  {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
-  {{ partial "navbar.html" . }}
-
 </nav>
